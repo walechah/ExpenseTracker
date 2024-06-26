@@ -1,4 +1,4 @@
-import React, { useState }  from "react";
+import React  from "react";
 import "./Expense.css";
 
 function IncomeExpense({Income,Expense}){ 

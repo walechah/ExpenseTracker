@@ -20,7 +20,7 @@ function NewTransaction({
   const addTransaction = () => {
     const cur = parseInt(current);
     setBalance(Balance + cur);
-    if(cur == 0){
+    if(cur === 0){
       alert("Enter something valid")
       return;
     }
