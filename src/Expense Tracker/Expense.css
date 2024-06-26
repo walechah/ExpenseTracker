@@ -1,0 +1,107 @@
+.income-expense {
+    display: flex;
+    gap: 20px;
+    border: 2px solid black;
+    padding: 5px 0;
+    width: 20vw;
+    justify-content: center;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border: 5px solid rgb(19, 17, 139);
+    background-color: #f9f9f9;
+    width: 80vw;
+    overflow: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 50px;
+    gap: 20px;
+    border-radius: 20px;
+}
+
+.income p {
+    color: lightgreen;
+    font-weight: bold;
+}
+
+.expense p {
+    color: red;
+    font-weight: bold;
+}
+
+.history {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.history hr {
+    grid-column: span 3;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.box {
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.transaction {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.transaction button {
+    padding: 10px;
+    background-color: yellow;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.transaction button:hover {
+    background-color: orange;
+}
+
+.transaction input {
+    height: 40px;
+    border-radius: 50px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: box-shadow 0.3s;
+}
+
+.transaction input:focus {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
